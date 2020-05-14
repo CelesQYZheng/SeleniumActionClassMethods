@@ -133,6 +133,7 @@ namespace SeleniumActionsClassMethods
             Actions actions = new Actions(driver);
             IWebElement drag = driver.FindElement(By.Id("draggable"));
             IWebElement drop = driver.FindElement(By.Id("droppable"));
+
             //actions.DragAndDrop(drag, drop).Build().Perform();
             actions.DragAndDropToOffset(drag,200,300).Build().Perform();
             Thread.Sleep(3000);
