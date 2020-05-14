@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{C274F275-2622-4172-88DC-8F45CFF6A5CB}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="SeleniumActionsClassMethods/UnitTest1.cs">
     <Files>
-      <File FileName="SeleniumActionsClassMethods/UnitTest1.cs" Line="117" Column="3" />
+      <File FileName="SeleniumActionsClassMethods/UnitTest1.cs" Line="167" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,15 +18,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="SeleniumActionsClassMethods" expanded="True">
-            <Node name="SeleniumActionsClassMethods" expanded="True">
-              <Node name="SeleniumActionsClassMethods" expanded="True">
-                <Node name="UnitTest1" expanded="True">
-                  <Node name="Keydown" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="SeleniumActionsClassMethods" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
