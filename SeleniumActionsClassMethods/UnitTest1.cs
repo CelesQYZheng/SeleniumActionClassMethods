@@ -164,5 +164,37 @@ namespace SeleniumActionsClassMethods
             driver.Quit();
         }
 
-     }
+        [TestMethod]
+        public void SendKeys()
+        {
+            IWebDriver driver = new FirefoxDriver();
+            driver.Url = "http://uitestpractice.com/Students/Actions";
+            Actions actions = new Actions(driver);
+            actions.SendKeys(Keys.PageDown).Perform();
+            Thread.Sleep(3000);
+            actions.SendKeys(Keys.PageUp).Perform();
+            Thread.Sleep(3000);
+            actions.SendKeys(driver.FindElement(By.Name("click")), Keys.Return).Perform();
+            Thread.Sleep(3000);
+            driver.Quit();
+        }
+
+        [TestMethod]
+        public void TestFB()
+        {
+
+            IWebDriver driver = new FirefoxDriver();
+            driver.Url = "https://www.facebook.com/";
+            Actions actions = new Actions(driver);
+            Thread.Sleep(3000);
+            actions.Click(driver.FindElement(By.Id("u_0_o")))
+                .SendKeys("John" + Keys.Tab).SendKeys("Doe" + Keys.Tab)
+                .SendKeys("234546453" + Keys.Tab)
+                .SendKeys("abc123" + Keys.Tab)
+                .Build()
+                .Perform();
+            Thread.Sleep(3000);
+            driver.Quit();
+        }
+    }
  }
